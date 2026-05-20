@@ -1,1 +1,79 @@
-# fengjia-guide
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>逢甲商圈導覽 Fengchia Tour</title>
+    <style>
+        /* 這裡放簡單的 CSS，用來控制中文和英文內容的顯示與隱藏 */
+        .lang-en { display: none; } /* 預設隱藏英文 */
+        body { font-family: Arial, sans-serif; padding: 20px; line-height: 1.6; }
+        .nav-btn { padding: 8px 16px; margin-right: 10px; cursor: pointer; }
+        .route-box { background: #f4f4f4; padding: 15px; margin: 15px 0; border-left: 5px solid #007bff; }
+        iframe { width: 100%; max-width: 600px; height: 450px; border: 0; }
+    </style>
+</head>
+<body>
+
+    <!-- 1. 語言切換按鈕 -->
+    <header>
+        <button class="nav-btn" onclick="switchLanguage('zh')">繁體中文</button>
+        <button class="nav-btn" onclick="switchLanguage('en')">English</button>
+    </header>
+
+    <hr>
+
+    <!-- 2. 網站主要內容區 -->
+    <main>
+        <!-- 中文版內容 -->
+        <div id="content-zh" class="lang-zh">
+            <h1>歡迎來到逢甲商圈！</h1>
+            <h2>📍 交通路線規劃推薦</h2>
+            
+            <div class="route-box">
+                <h3>從【台中火車站】出發</h3>
+                <p>搭乘公車：請至火車站前公車月台，搭乘 <strong>25路</strong> 或 <strong>35路</strong> 公車，於「逢甲大學」站下車即可到達。</p>
+            </div>
+
+            <h2>🍔 特色店家介紹</h2>
+            <p>明倫蛋餅：逢甲必吃排隊美食，餅皮Q彈帶有甜味。</p>
+        </div>
+
+        <!-- 英文版內容 -->
+        <div id="content-en" class="lang-en">
+            <h1>Welcome to Fengchia Night Market!</h1>
+            <h2>📍 Recommended Routes</h2>
+            
+            <div class="route-box">
+                <h3>From [Taichung Railway Station]</h3>
+                <p>By Bus: Take Bus <strong>No. 25</strong> or <strong>No. 35</strong> at the station bus platform, and get off at "Feng Chia University" station.</p>
+            </div>
+
+            <h2>🍔 Featured Shops</h2>
+            <p>Minglun Egg Roll: A must-try street food in Fengchia with a chewy and slightly sweet crust.</p>
+        </div>
+
+        <!-- 3. Google 地圖嵌入區 (兩語系共用) -->
+        <h2>🗺️ 地圖導覽 / Map</h2>
+        <!-- 這裡嵌入了逢甲大學周邊的 Google 地圖 -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m12!1m3!1d3640.08865660855!2d120.64414167604586!3d24.177387472093514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34691624fa0e211d%3A0x7d6fa5ff78ec6e9!2z6YCi55Sy5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1710000000000!5m2!1szh-TW!2stw" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </main>
+
+    <!-- 4. JavaScript 程式碼：負責切換中英文 -->
+    <script>
+        function switchLanguage(lang) {
+            const zhContent = document.getElementById('content-zh');
+            const enContent = document.getElementById('content-en');
+
+            if (lang === 'zh') {
+                zhContent.style.display = 'block';  // 顯示中文
+                enContent.style.display = 'none';   // 隱藏英文
+            } else if (lang === 'en') {
+                zhContent.style.display = 'none';   // 隱藏中文
+                enContent.style.display = 'block';  // 顯示英文
+            }
+        }
+    </script>
+
+</body>
+</html>
