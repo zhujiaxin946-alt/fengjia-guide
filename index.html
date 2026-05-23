@@ -8,39 +8,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         html { scroll-behavior: smooth; }
-        .bg-gradient-main { background-color: #FFF8FA; }
+        /* 網頁主背景換上柔和的杏桃粉白底色 */
+        .bg-gradient-main { background-color: #FFF6F2; }
     </style>
 </head>
-<body class="bg-gradient-main text-slate-800 font-sans antialiased selection:bg-purple-200">
+<body class="bg-gradient-main text-slate-800 font-sans antialiased selection:bg-orange-100">
 
     <nav class="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md shadow-sm z-50 px-6 py-4 transition-all">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
             <div class="flex items-center space-x-2 cursor-pointer" onclick="window.scrollTo(0,0)">
-                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-purple-600 to-pink-500 flex items-center justify-center text-white shadow-md">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-orange-400 to-rose-400 flex items-center justify-center text-white shadow-md">
                     <i class="fa-solid fa-shield-heart text-lg"></i>
                 </div>
-                <span class="font-black text-xl tracking-wider bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">逢甲食安玩樂指南</span>
+                <span class="font-black text-xl tracking-wider bg-gradient-to-r from-orange-500 to-rose-500 bg-clip-text text-transparent">逢甲食安玩樂指南</span>
             </div>
             <div class="flex items-center space-x-8 text-sm font-semibold text-slate-600">
-                <a href="#transport" class="hover:text-purple-600 transition-colors">交通路線</a>
-                <a href="#shops" class="hover:text-purple-600 transition-colors">安心店家</a>
-                <a href="#itinerary" class="hover:text-purple-600 transition-colors">推薦行程</a>
-                <a href="#our-map" class="hover:text-purple-600 transition-colors">探索地圖</a>
+                <a href="#transport" class="hover:text-rose-500 transition-colors">交通路線</a>
+                <a href="#shops" class="hover:text-rose-500 transition-colors">安心店家</a>
+                <a href="#itinerary" class="hover:text-rose-500 transition-colors">推薦行程</a>
+                <a href="#our-map" class="hover:text-rose-500 transition-colors">探索地圖</a>
             </div>
         </div>
     </nav>
 
     <header class="pt-32 pb-20 px-6 relative overflow-hidden">
         <div class="max-w-7xl mx-auto text-center relative z-10">
-            <span class="bg-purple-100 text-purple-800 text-xs font-extrabold px-4 py-1.5 rounded-full tracking-widest uppercase mb-4 inline-block shadow-sm">Feng Chia Night Market</span>
+            <span class="bg-orange-100 text-orange-800 text-xs font-extrabold px-4 py-1.5 rounded-full tracking-widest uppercase mb-4 inline-block shadow-sm">Feng Chia Night Market</span>
             <h1 class="text-5xl md:text-7xl font-black text-slate-900 tracking-tight mb-6 leading-tight">
-                逢甲探索，<br><span class="bg-gradient-to-r from-purple-600 via-pink-500 to-amber-500 bg-clip-text text-transparent">美味與食安兼得</span>
+                逢甲探索，<br><span class="bg-gradient-to-r from-orange-400 via-coral-400 to-rose-500 bg-clip-text text-transparent">美味與食安兼得</span>
             </h1>
             <p class="max-w-2xl mx-auto text-slate-500 text-base md:text-lg mb-10 leading-relaxed">
                 歡迎來到逢甲大學商圈！本指南為您嚴選榮獲「食安特優、優良」認證的在地名店，結合流暢的交通與導航規劃，讓您逛得開心、吃得更安心。
             </p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#shops" class="w-full sm:w-auto bg-gradient-to-r from-purple-600 to-pink-500 hover:from-purple-700 hover:to-pink-600 text-white font-bold px-8 py-4 rounded-full shadow-lg shadow-purple-200 hover:shadow-xl transition-all text-center">
+                <a href="#shops" class="w-full sm:w-auto bg-gradient-to-r from-orange-400 to-rose-400 hover:from-orange-500 hover:to-rose-500 text-white font-bold px-8 py-4 rounded-full shadow-lg shadow-orange-100 hover:shadow-xl transition-all text-center">
                     瀏覽安心店家
                 </a>
                 <a href="#transport" class="w-full sm:w-auto bg-white hover:bg-slate-50 text-slate-700 font-semibold px-8 py-4 rounded-full shadow-sm hover:shadow-md border border-slate-200 transition-all text-center">
@@ -52,74 +53,74 @@
 
     <section id="transport" class="py-20 px-6 bg-white/60">
         <div class="max-w-7xl mx-auto">
-            <span class="text-pink-500 font-bold tracking-widest text-xs uppercase block mb-2">STEP 01</span>
-            <h2 class="text-3xl md:text-5xl font-extrabold text-purple-900 mb-4">從車站到逢甲商圈</h2>
+            <span class="text-rose-400 font-bold tracking-widest text-xs uppercase block mb-2">STEP 01</span>
+            <h2 class="text-3xl md:text-5xl font-extrabold text-slate-800 mb-4">從車站到逢甲商圈</h2>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
                 
                 <div class="bg-white p-8 rounded-3xl shadow-xl shadow-slate-100/50 border border-slate-100 relative group hover:shadow-2xl transition-all duration-300">
-                    <div class="absolute top-6 right-6 w-12 h-12 bg-purple-100 text-purple-700 rounded-full flex items-center justify-center text-lg"><i class="fa-solid fa-train"></i></div>
-                    <div class="text-5xl font-black text-pink-100 mb-4">01</div>
+                    <div class="absolute top-6 right-6 w-12 h-12 bg-orange-50 text-rose-400 rounded-full flex items-center justify-center text-lg shadow-sm"><i class="fa-solid fa-train"></i></div>
+                    <div class="text-5xl font-black text-orange-100 mb-4">01</div>
                     <h3 class="text-2xl font-bold text-slate-800 mb-1">烏日高鐵站</h3>
                     <ul class="space-y-4 text-slate-600 text-sm mt-4">
                         <li class="flex items-start space-x-3">
-                            <span class="w-5 h-5 rounded-full bg-amber-400 flex items-center justify-center text-xs font-bold shrink-0">1</span>
+                            <span class="w-5 h-5 rounded-full bg-orange-400 text-white flex items-center justify-center text-xs font-bold shrink-0">1</span>
                             <span>至高鐵快捷公車站（下車層）。</span>
                         </li>
                         <li class="flex items-start space-x-3">
-                            <span class="w-5 h-5 rounded-full bg-amber-400 flex items-center justify-center text-xs font-bold shrink-0">2</span>
+                            <span class="w-5 h-5 rounded-full bg-orange-400 text-white flex items-center justify-center text-xs font-bold shrink-0">2</span>
                             <span>搭乘 **160路** 高鐵快捷公車直達「逢甲大學」站。</span>
                         </li>
                     </ul>
                 </div>
 
                 <div class="bg-white p-8 rounded-3xl shadow-xl shadow-slate-100/50 border border-slate-100 relative group hover:shadow-2xl transition-all duration-300">
-                    <div class="absolute top-6 right-6 w-12 h-12 bg-purple-100 text-purple-700 rounded-full flex items-center justify-center text-lg"><i class="fa-solid fa-train-tram"></i></div>
-                    <div class="text-5xl font-black text-pink-100 mb-4">02</div>
+                    <div class="absolute top-6 right-6 w-12 h-12 bg-orange-50 text-rose-400 rounded-full flex items-center justify-center text-lg shadow-sm"><i class="fa-solid fa-train-tram"></i></div>
+                    <div class="text-5xl font-black text-orange-100 mb-4">02</div>
                     <h3 class="text-2xl font-bold text-slate-800 mb-1">台中火車站</h3>
                     <ul class="space-y-4 text-slate-600 text-sm mt-4">
                         <li class="flex items-start space-x-3">
-                            <span class="w-5 h-5 rounded-full bg-amber-400 flex items-center justify-center text-xs font-bold shrink-0">1</span>
+                            <span class="w-5 h-5 rounded-full bg-orange-400 text-white flex items-center justify-center text-xs font-bold shrink-0">1</span>
                             <span>前往火車站前站公車轉運廣場。</span>
                         </li>
                         <li class="flex items-start space-x-3">
-                            <span class="w-5 h-5 rounded-full bg-amber-400 flex items-center justify-center text-xs font-bold shrink-0">2</span>
+                            <span class="w-5 h-5 rounded-full bg-orange-400 text-white flex items-center justify-center text-xs font-bold shrink-0">2</span>
                             <span>搭乘 **25路、35路** 公車，至「逢甲大學」站下車。</span>
                         </li>
                     </ul>
                 </div>
 
                 <div class="bg-white p-8 rounded-3xl shadow-xl shadow-slate-100/50 border border-slate-100 relative group hover:shadow-2xl transition-all duration-300">
-                    <div class="absolute top-6 right-6 w-12 h-12 bg-purple-100 text-purple-700 rounded-full flex items-center justify-center text-lg"><i class="fa-solid fa-bus"></i></div>
-                    <div class="text-5xl font-black text-pink-100 mb-4">03</div>
+                    <div class="absolute top-6 right-6 w-12 h-12 bg-orange-50 text-rose-400 rounded-full flex items-center justify-center text-lg shadow-sm"><i class="fa-solid fa-bus"></i></div>
+                    <div class="text-5xl font-black text-orange-100 mb-4">03</div>
                     <h3 class="text-2xl font-bold text-slate-800 mb-1">朝馬轉運站</h3>
                     <ul class="space-y-4 text-slate-600 text-sm mt-4">
                         <li class="flex items-start space-x-3">
-                            <span class="w-5 h-5 rounded-full bg-amber-400 flex items-center justify-center text-xs font-bold shrink-0">1</span>
+                            <span class="w-5 h-5 rounded-full bg-orange-400 text-white flex items-center justify-center text-xs font-bold shrink-0">1</span>
                             <span>各大國道客運朝馬站下車。</span>
                         </li>
                         <li class="flex items-start space-x-3">
-                            <span class="w-5 h-5 rounded-full bg-amber-400 flex items-center justify-center text-xs font-bold shrink-0">2</span>
+                            <span class="w-5 h-5 rounded-full bg-orange-400 text-white flex items-center justify-center text-xs font-bold shrink-0">2</span>
                             <span>轉搭 **5路、63路、79次** 公車至「逢甲大學」站。</span>
                         </li>
                     </ul>
                 </div>
 
                 <div class="bg-white p-8 rounded-3xl shadow-xl shadow-slate-100/50 border border-slate-100 relative group hover:shadow-2xl transition-all duration-300">
-                    <div class="absolute top-6 right-6 w-12 h-12 bg-green-100 text-green-700 rounded-full flex items-center justify-center text-lg"><i class="fa-solid fa-train-subway"></i></div>
-                    <div class="text-5xl font-black text-pink-100 mb-4">04</div>
+                    <div class="absolute top-6 right-6 w-12 h-12 bg-orange-50 text-rose-400 rounded-full flex items-center justify-center text-lg shadow-sm"><i class="fa-solid fa-train-subway"></i></div>
+                    <div class="text-5xl font-black text-orange-100 mb-4">04</div>
                     <h3 class="text-2xl font-bold text-slate-800 mb-1">捷運文心櫻花站</h3>
                     <ul class="space-y-4 text-slate-600 text-sm mt-4">
                         <li class="flex items-start space-x-3">
-                            <span class="w-5 h-5 rounded-full bg-green-500 text-white flex items-center justify-center text-xs font-bold shrink-0">1</span>
+                            <span class="w-5 h-5 rounded-full bg-orange-400 text-white flex items-center justify-center text-xs font-bold shrink-0">1</span>
                             <span>搭乘捷運綠線至「文心櫻花站」下車。</span>
                         </li>
                         <li class="flex items-start space-x-3">
-                            <span class="w-5 h-5 rounded-full bg-amber-400 flex items-center justify-center text-xs font-bold shrink-0">2</span>
+                            <span class="w-5 h-5 rounded-full bg-orange-400 text-white flex items-center justify-center text-xs font-bold shrink-0">2</span>
                             <span>轉乘公車：出站轉搭 **33路、37路** 至「逢甲大學」站。</span>
                         </li>
                         <li class="flex items-start space-x-3">
-                            <span class="w-5 h-5 rounded-full bg-purple-500 text-white flex items-center justify-center text-xs font-bold shrink-0">3</span>
+                            <span class="w-5 h-5 rounded-full bg-rose-400 text-white flex items-center justify-center text-xs font-bold shrink-0">3</span>
                             <span>騎 YouBike：順著弘孝路或文心路騎乘約 5-8 分鐘。</span>
                         </li>
                     </ul>
@@ -131,14 +132,14 @@
 
     <section id="shops" class="py-20 px-6">
         <div class="max-w-7xl mx-auto">
-            <span class="text-pink-500 font-bold tracking-widest text-xs uppercase block mb-2">STEP 02</span>
-            <h2 class="text-3xl md:text-5xl font-extrabold text-purple-900 mb-4">食安安心店家</h2>
+            <span class="text-rose-400 font-bold tracking-widest text-xs uppercase block mb-2">STEP 02</span>
+            <h2 class="text-3xl md:text-5xl font-extrabold text-slate-800 mb-4">食安安心店家</h2>
             <p class="text-slate-500 mb-8 text-sm md:text-base">點擊店家卡片可查看詳細食安登錄字號與檢驗資訊；點擊右下角「導航」可直接開啟 Google 地圖。</p>
             
             <div class="flex flex-wrap gap-3 mb-10">
-                <button onclick="filterShops('all')" class="shop-tab px-5 py-2 rounded-full bg-purple-950 text-white font-medium text-sm transition-all">全部店家</button>
-                <button onclick="filterShops('food')" class="shop-tab px-5 py-2 rounded-full bg-purple-100 text-purple-800 hover:bg-purple-200 font-medium text-sm transition-all">美味美食</button>
-                <button onclick="filterShops('snack')" class="shop-tab px-5 py-2 rounded-full bg-purple-100 text-purple-800 hover:bg-purple-200 font-medium text-sm transition-all">特色小吃</button>
+                <button onclick="filterShops('all')" class="shop-tab px-5 py-2 rounded-full bg-rose-500 text-white font-medium text-sm transition-all">全部店家</button>
+                <button onclick="filterShops('food')" class="shop-tab px-5 py-2 rounded-full bg-orange-100 text-orange-800 hover:bg-orange-200 font-medium text-sm transition-all">美味美食</button>
+                <button onclick="filterShops('snack')" class="shop-tab px-5 py-2 rounded-full bg-orange-100 text-orange-800 hover:bg-orange-200 font-medium text-sm transition-all">特色小吃</button>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -147,28 +148,28 @@
                      class="shop-item food cursor-pointer bg-white p-8 rounded-3xl shadow-lg border border-slate-100 flex flex-col justify-between min-h-[410px] transform hover:-translate-y-1 transition-all">
                     <div>
                         <div class="flex justify-between items-start">
-                            <span class="bg-emerald-100 text-emerald-800 text-xs px-2.5 py-1 rounded-full font-bold"><i class="fa-solid fa-circle-check mr-1"></i>食安特優</span>
+                            <span class="bg-orange-100 text-orange-800 text-xs px-2.5 py-1 rounded-full font-bold"><i class="fa-solid fa-circle-check mr-1"></i>食安特優</span>
                             <span class="text-4xl font-black text-slate-100">01</span>
                         </div>
                         <h3 class="text-2xl font-bold text-slate-800 mt-4 mb-2">官芝霖大腸包小腸</h3>
                         <p class="text-slate-500 text-sm">酥脆糯米腸夾烤香腸，逢甲第一名物。</p>
                         
                         <div class="flex flex-wrap gap-1.5 mt-3">
-                            <span class="bg-amber-50 text-amber-700 text-[11px] px-2 py-0.5 rounded-md font-medium">✨ 台灣溫體豬肉</span>
-                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded-md font-medium">🌾 在地糯米</span>
+                            <span class="bg-orange-50 text-orange-700 text-[11px] px-2 py-0.5 rounded-md font-medium">✨ 台灣溫體豬肉</span>
+                            <span class="bg-rose-50 text-rose-700 text-[11px] px-2 py-0.5 rounded-md font-medium">🌾 在地糯米</span>
                         </div>
 
-                        <div class="mt-3 bg-pink-50/50 border border-pink-100 p-2.5 rounded-xl text-xs text-pink-700">
-                            <i class="fa-solid fa-gift mr-1"></i><strong>最新優惠：</strong>憑網頁畫面消費大份，即享折抵 5 元優惠！
+                        <div class="mt-3 bg-orange-50/70 border border-orange-100 p-2.5 rounded-xl text-xs text-orange-800">
+                            <i class="fa-solid fa-gift mr-1 text-rose-400"></i><strong>最新優惠：</strong>憑網頁畫面消費大份，即享折抵 5 元優惠！
                         </div>
                     </div>
                     
-                    <div class="mt-6 pt-3 border-t border-slate-100 flex items-center justify-between text-xs -mx-8 -mb-8 p-4 bg-emerald-50/60 rounded-b-3xl">
+                    <div class="mt-6 pt-3 border-t border-slate-100 flex items-center justify-between text-xs -mx-8 -mb-8 p-4 bg-orange-50/40 rounded-b-3xl">
                         <div class="flex flex-col text-slate-500 font-medium space-y-0.5">
-                            <span><i class="fa-solid fa-clock mr-1 text-emerald-600"></i>12:00 - 00:00</span>
-                            <span class="text-[10px] text-emerald-700 opacity-80"><i class="fa-solid fa-database mr-1"></i>點擊看溯源</span>
+                            <span><i class="fa-solid fa-clock mr-1 text-rose-400"></i>12:00 - 00:00</span>
+                            <span class="text-[10px] text-orange-700 opacity-80"><i class="fa-solid fa-database mr-1"></i>點擊看溯源</span>
                         </div>
-                        <a href="https://maps.google.com/?cid=6369323692775732507&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" onclick="event.stopPropagation();" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-3 py-1.5 rounded-xl shadow-sm transition-colors flex items-center">
+                        <a href="https://maps.google.com/?cid=6369323692775732507&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" onclick="event.stopPropagation();" class="bg-gradient-to-r from-orange-400 to-rose-400 hover:from-orange-50 hover:to-rose-50 text-white font-bold px-3 py-1.5 rounded-xl shadow-sm transition-colors flex items-center">
                             <i class="fa-solid fa-location-dot mr-1"></i>導航
                         </a>
                     </div>
@@ -178,28 +179,28 @@
                      class="shop-item food cursor-pointer bg-white p-8 rounded-3xl shadow-lg border border-slate-100 flex flex-col justify-between min-h-[410px] transform hover:-translate-y-1 transition-all">
                     <div>
                         <div class="flex justify-between items-start">
-                            <span class="bg-emerald-100 text-emerald-800 text-xs px-2.5 py-1 rounded-full font-bold"><i class="fa-solid fa-circle-check mr-1"></i>食安優良</span>
+                            <span class="bg-orange-100 text-orange-800 text-xs px-2.5 py-1 rounded-full font-bold"><i class="fa-solid fa-circle-check mr-1"></i>食安優良</span>
                             <span class="text-4xl font-black text-slate-100">02</span>
                         </div>
                         <h3 class="text-2xl font-bold text-slate-800 mt-4 mb-2">明倫蛋餅</h3>
                         <p class="text-slate-500 text-sm">彈牙手工麵糊蛋餅，獨門甜辣醬必加。</p>
                         
                         <div class="flex flex-wrap gap-1.5 mt-3">
-                            <span class="bg-amber-50 text-amber-700 text-[11px] px-2 py-0.5 rounded-md font-medium">🍳 嚴選洗選蛋</span>
-                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded-md font-medium">🌱 新鮮青蔥</span>
+                            <span class="bg-orange-50 text-orange-700 text-[11px] px-2 py-0.5 rounded-md font-medium">🍳 嚴選洗選蛋</span>
+                            <span class="bg-rose-50 text-rose-700 text-[11px] px-2 py-0.5 rounded-md font-medium">🌱 新鮮青蔥</span>
                         </div>
 
-                        <div class="mt-3 bg-pink-50/50 border border-pink-100 p-2.5 rounded-xl text-xs text-pink-700">
-                            <i class="fa-solid fa-gift mr-1"></i><strong>最新優惠：</strong>集點活動進行中，買十送一超划算！
+                        <div class="mt-3 bg-orange-50/70 border border-orange-100 p-2.5 rounded-xl text-xs text-orange-800">
+                            <i class="fa-solid fa-gift mr-1 text-rose-400"></i><strong>最新優惠：</strong>集點活動進行中，買十送一超划算！
                         </div>
                     </div>
                     
-                    <div class="mt-6 pt-3 border-t border-slate-100 flex items-center justify-between text-xs -mx-8 -mb-8 p-4 bg-emerald-50/60 rounded-b-3xl">
+                    <div class="mt-6 pt-3 border-t border-slate-100 flex items-center justify-between text-xs -mx-8 -mb-8 p-4 bg-orange-50/40 rounded-b-3xl">
                         <div class="flex flex-col text-slate-500 font-medium space-y-0.5">
-                            <span><i class="fa-solid fa-clock mr-1 text-emerald-600"></i>15:00 - 00:00</span>
-                            <span class="text-[10px] text-emerald-700 opacity-80"><i class="fa-solid fa-database mr-1"></i>點擊看溯源</span>
+                            <span><i class="fa-solid fa-clock mr-1 text-rose-400"></i>15:00 - 00:00</span>
+                            <span class="text-[10px] text-orange-700 opacity-80"><i class="fa-solid fa-database mr-1"></i>點擊看溯源</span>
                         </div>
-                        <a href="https://maps.google.com/?cid=9422227883683540004&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" onclick="event.stopPropagation();" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-3 py-1.5 rounded-xl shadow-sm transition-colors flex items-center">
+                        <a href="https://maps.google.com/?cid=9422227883683540004&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" onclick="event.stopPropagation();" class="bg-gradient-to-r from-orange-400 to-rose-400 hover:from-orange-50 hover:to-rose-50 text-white font-bold px-3 py-1.5 rounded-xl shadow-sm transition-colors flex items-center">
                             <i class="fa-solid fa-location-dot mr-1"></i>導航
                         </a>
                     </div>
@@ -209,28 +210,28 @@
                      class="shop-item snack cursor-pointer bg-white p-8 rounded-3xl shadow-lg border border-slate-100 flex flex-col justify-between min-h-[410px] transform hover:-translate-y-1 transition-all">
                     <div>
                         <div class="flex justify-between items-start">
-                            <span class="bg-emerald-100 text-emerald-800 text-xs px-2.5 py-1 rounded-full font-bold"><i class="fa-solid fa-circle-check mr-1"></i>食安特優</span>
+                            <span class="bg-orange-100 text-orange-800 text-xs px-2.5 py-1 rounded-full font-bold"><i class="fa-solid fa-circle-check mr-1"></i>食安特優</span>
                             <span class="text-4xl font-black text-slate-100">03</span>
                         </div>
                         <h3 class="text-2xl font-bold text-slate-800 mt-4 mb-2">日船章魚小丸子</h3>
                         <p class="text-slate-500 text-sm">全台日船總店！外皮微脆內餡飽滿、柴魚片跳舞舞動人心。</p>
                         
                         <div class="flex flex-wrap gap-1.5 mt-3">
-                            <span class="bg-amber-50 text-amber-700 text-[11px] px-2 py-0.5 rounded-md font-medium">🐙 鮮章魚切塊</span>
-                            <span class="bg-purple-50 text-purple-700 text-[11px] px-2 py-0.5 rounded-md font-medium">🥗 契作高麗菜</span>
+                            <span class="bg-orange-50 text-orange-700 text-[11px] px-2 py-0.5 rounded-md font-medium">🐙 鮮章魚切塊</span>
+                            <span class="bg-rose-50 text-rose-700 text-[11px] px-2 py-0.5 rounded-md font-medium">🥗 契作高麗菜</span>
                         </div>
 
-                        <div class="mt-3 bg-pink-50/50 border border-pink-100 p-2.5 rounded-xl text-xs text-pink-700">
-                            <i class="fa-solid fa-gift mr-1"></i><strong>最新優惠：</strong>打卡即享大盒現折 5 元，雙拼口味一次滿足！
+                        <div class="mt-3 bg-orange-50/70 border border-orange-100 p-2.5 rounded-xl text-xs text-orange-800">
+                            <i class="fa-solid fa-gift mr-1 text-rose-400"></i><strong>最新優惠：</strong>打卡即享大盒現折 5 元，雙拼口味一次滿足！
                         </div>
                     </div>
                     
-                    <div class="mt-6 pt-3 border-t border-slate-100 flex items-center justify-between text-xs -mx-8 -mb-8 p-4 bg-emerald-50/60 rounded-b-3xl">
+                    <div class="mt-6 pt-3 border-t border-slate-100 flex items-center justify-between text-xs -mx-8 -mb-8 p-4 bg-orange-50/40 rounded-b-3xl">
                         <div class="flex flex-col text-slate-500 font-medium space-y-0.5">
-                            <span><i class="fa-solid fa-clock mr-1 text-emerald-600"></i>15:45 - 00:00</span>
-                            <span class="text-[10px] text-emerald-700 opacity-80"><i class="fa-solid fa-database mr-1"></i>點擊看溯源</span>
+                            <span><i class="fa-solid fa-clock mr-1 text-rose-400"></i>15:45 - 00:00</span>
+                            <span class="text-[10px] text-orange-700 opacity-80"><i class="fa-solid fa-database mr-1"></i>點擊看溯源</span>
                         </div>
-                        <a href="https://maps.google.com/?cid=9002103736321913207&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" onclick="event.stopPropagation();" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-3 py-1.5 rounded-xl shadow-sm transition-colors flex items-center">
+                        <a href="https://maps.google.com/?cid=9002103736321913207&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" onclick="event.stopPropagation();" class="bg-gradient-to-r from-orange-400 to-rose-400 hover:from-orange-50 hover:to-rose-50 text-white font-bold px-3 py-1.5 rounded-xl shadow-sm transition-colors flex items-center">
                             <i class="fa-solid fa-location-dot mr-1"></i>導航
                         </a>
                     </div>
@@ -240,35 +241,35 @@
         </div>
     </section>
 
-    <section id="itinerary" class="py-20 px-6 bg-gradient-to-b from-white/40 to-purple-50/30">
+    <section id="itinerary" class="py-20 px-6 bg-gradient-to-b from-white/40 to-orange-50/20">
         <div class="max-w-4xl mx-auto">
-            <span class="text-pink-500 font-bold tracking-widest text-xs uppercase block mb-2">STEP 03</span>
-            <h2 class="text-3xl md:text-5xl font-extrabold text-purple-900 mb-10 text-center">逢甲經典一日遊行程</h2>
+            <span class="text-rose-400 font-bold tracking-widest text-xs uppercase block mb-2">STEP 03</span>
+            <h2 class="text-3xl md:text-5xl font-extrabold text-slate-800 mb-10 text-center">逢甲經典一日遊行程</h2>
             
-            <div class="space-y-8 relative before:absolute before:top-4 before:bottom-4 before:left-6 before:w-0.5 before:bg-purple-200">
+            <div class="space-y-8 relative before:absolute before:top-4 before:bottom-4 before:left-6 before:w-0.5 before:bg-orange-200">
                 
                 <div class="relative pl-16 group">
-                    <div class="absolute top-1 left-2 w-9 h-9 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold text-sm shadow-md z-10">1</div>
+                    <div class="absolute top-1 left-2 w-9 h-9 rounded-full bg-rose-400 text-white flex items-center justify-center font-bold text-sm shadow-md z-10">1</div>
                     <h3 class="text-xl font-bold text-slate-800 mb-2">16:00 - 抵達逢甲，開啟美味序幕</h3>
                     <p class="text-slate-500 text-sm leading-relaxed">搭乘大眾運輸工具（如最新的捷運文心櫻花站轉乘公車）順暢抵達逢甲大學正門。趁著傍晚人潮尚未擁擠，先到【官芝霖大腸包小腸】體驗外酥內軟的極致炭烤香氣。</p>
                 </div>
 
                 <div class="relative pl-16 group">
-                    <div class="absolute top-1 left-2 w-9 h-9 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold text-sm shadow-md z-10">2</div>
+                    <div class="absolute top-1 left-2 w-9 h-9 rounded-full bg-rose-400 text-white flex items-center justify-center font-bold text-sm shadow-md z-10">2</div>
                     <h3 class="text-xl font-bold text-slate-800 mb-2">17:30 - 古早味手工下午茶點</h3>
                     <p class="text-slate-500 text-sm leading-relaxed">散步至福星路，排隊品嚐傳承多年的【明倫蛋餅】。現場由麵糊現點現煎的手工餅皮帶著淡淡甜味，配上靈魂甜辣醬，讓人欲罷不能。</p>
                 </div>
 
                 <div class="relative pl-16 group">
-                    <div class="absolute top-1 left-2 w-9 h-9 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold text-sm shadow-md z-10">3</div>
+                    <div class="absolute top-1 left-2 w-9 h-9 rounded-full bg-rose-400 text-white flex items-center justify-center font-bold text-sm shadow-md z-10">3</div>
                     <h3 class="text-xl font-bold text-slate-800 mb-2">19:00 - 時尚文創與平價服飾聖地</h3>
                     <p class="text-slate-500 text-sm leading-relaxed">吃飽後沿著文華路與便當街盡情探索！這裡聚集了最新潮流服飾、各式風格配件與創意小物，是必踩的購物天堂。</p>
                 </div>
 
                 <div class="relative pl-16 group">
-                    <div class="absolute top-1 left-2 w-9 h-9 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold text-sm shadow-md z-10">4</div>
+                    <div class="absolute top-1 left-2 w-9 h-9 rounded-full bg-rose-400 text-white flex items-center justify-center font-bold text-sm shadow-md z-10">4</div>
                     <h3 class="text-xl font-bold text-slate-800 mb-2">20:30 - 朝聖全台總店，章魚燒爆擊收尾</h3>
-                    <p class="text-slate-500 text-sm leading-relaxed">最後來到文華路與福星路口的【日船章魚小丸子（逢甲總店）】。看著飽飽鮮甜的章魚丸在烤盤上翻滾，撒上漫天飛舞的柴魚片與芥末美乃滋，熱氣騰騰中帶點酥脆，給這趟完美的逢甲安心美味之旅畫上最華麗的句點！</p>
+                    <p class="text-slate-500 text-sm leading-relaxed">最後來到文華路與福星路口的【日船章魚小丸子（逢甲總店）】。看著飽滿鮮甜的章魚丸在烤盤上翻滾，撒上漫天飛舞的柴魚片與芥末美乃滋，熱氣騰騰中帶點酥脆，給這趟完美的逢甲安心美味之旅畫上最華麗的句點！</p>
                 </div>
 
             </div>
@@ -277,8 +278,8 @@
 
     <section id="our-map" class="py-20 px-6 bg-white">
         <div class="max-w-7xl mx-auto text-center">
-            <span class="text-pink-500 font-bold tracking-widest text-xs uppercase block mb-2">EXPLORE</span>
-            <h2 class="text-3xl md:text-5xl font-extrabold text-purple-900 mb-6">逢甲食安玩樂地圖</h2>
+            <span class="text-rose-400 font-bold tracking-widest text-xs uppercase block mb-2">EXPLORE</span>
+            <h2 class="text-3xl md:text-5xl font-extrabold text-slate-800 mb-6">逢甲食安玩樂地圖</h2>
             <p class="text-slate-500 max-w-2xl mx-auto mb-10 text-sm md:text-base">這是我們為您精心彙整的互動地圖，一指掌握所有安心店家的相對位置，逛夜市再也不迷路！</p>
             
             <div class="w-full h-[450px] rounded-3xl overflow-hidden shadow-xl border border-slate-100">
@@ -298,7 +299,7 @@
             <button onclick="closeModal()" class="absolute top-6 right-6 text-slate-400 hover:text-slate-600 text-xl"><i class="fa-solid fa-xmark"></i></button>
             
             <div class="flex items-center space-x-3 mb-6">
-                <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-xl shadow-inner"><i class="fa-solid fa-file-shield"></i></div>
+                <div class="w-12 h-12 rounded-2xl bg-orange-50 text-rose-400 flex items-center justify-center text-xl shadow-inner"><i class="fa-solid fa-file-shield"></i></div>
                 <div>
                     <h4 id="modalShopName" class="text-2xl font-bold text-slate-800">店家名稱</h4>
                     <p class="text-xs text-slate-400 font-medium">數位食安自主登錄與追溯檔案</p>
@@ -320,7 +321,7 @@
                 </div>
                 <div class="bg-slate-50 p-4 rounded-2xl border border-slate-100">
                     <span class="text-xs text-slate-400 block mb-1">最近一次檢驗合格日期</span>
-                    <p id="modalInspectDate" class="text-sm text-slate-600 font-semibold text-emerald-600">檢驗日期</p>
+                    <p id="modalInspectDate" class="text-sm text-slate-600 font-semibold text-rose-400">檢驗日期</p>
                 </div>
             </div>
             <button onclick="closeModal()" class="w-full mt-6 bg-slate-900 hover:bg-slate-800 text-white font-bold py-3.5 rounded-2xl shadow-lg transition-all text-sm">關閉追溯檔案</button>
@@ -333,11 +334,11 @@
             const tabs = document.querySelectorAll('.shop-tab');
             
             tabs.forEach(tab => {
-                tab.classList.remove('bg-purple-950', 'text-white');
-                tab.classList.add('bg-purple-100', 'text-purple-800');
+                tab.classList.remove('bg-rose-500', 'text-white');
+                tab.classList.add('bg-orange-100', 'text-orange-800');
             });
-            event.target.classList.remove('bg-purple-100', 'text-purple-800');
-            event.target.classList.add('bg-purple-950', 'text-white');
+            event.target.classList.remove('bg-orange-100', 'text-orange-800');
+            event.target.classList.add('bg-rose-500', 'text-white');
 
             items.forEach(item => {
                 if (category === 'all' || item.classList.contains(category)) {
