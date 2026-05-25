@@ -30,7 +30,7 @@
                 <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-400 to-rose-400 flex items-center justify-center text-white shadow-md">
                     <i class="fa-solid fa-shield-heart text-lg"></i>
                 </div>
-                <span class="font-black text-xl tracking-wider text-amber-950">逢甲食安玩樂指南</span>
+                <span data-zh="逢甲食安玩樂指南" data-en="Feng Chia Eco Rally" class="font-black text-xl tracking-wider text-amber-950">逢甲食安玩樂指南</span>
             <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
     <a href="#stamp-rally" data-zh="永續集章活動" data-en="Eco Rally" class="hover:text-amber-950 transition-colors">永續集章活動</a>
     <a href="#itinerary" data-zh="交通與行程" data-en="Transport & Itinerary" class="hover:text-amber-950 transition-colors">交通與行程</a>
@@ -47,20 +47,21 @@
     <header class="pt-32 pb-20 px-6 relative overflow-hidden bg-white">
         <div class="max-w-7xl mx-auto text-center relative z-10">
             <span class="bg-amber-100 text-amber-800 text-xs font-extrabold px-4 py-1.5 rounded-full tracking-widest uppercase mb-4 inline-block shadow-sm">Feng Chia Night Market</span>
-            <h1 class="text-5xl md:text-7xl font-black text-amber-950 tracking-tight mb-6 leading-tight">
-                逢甲探索，<br><span class="bg-gradient-to-r from-amber-500 via-orange-400 to-rose-400 bg-clip-text text-transparent">美味與食安兼得</span>
-            </h1>
-            <p class="max-w-2xl mx-auto text-slate-500 text-base md:text-lg mb-10 leading-relaxed">
-                歡迎來到逢甲大學商圈！本指南為您嚴選榮獲「食安特優、優良」認證的在地名店，結合流暢的交通與導航規劃，讓您逛得開心、吃得更安心。
-            </p>
+            <h1 data-zh="逢甲探索，美味與食安兼得" 
+    data-en="Explore Feng Chia: Where Delicious Food Meets Food Safety" 
+    class="text-5xl md:text-7xl font-black text-amber-950 tracking-tight mb-6 leading-tight">
+    逢甲探索，<br><span class="bg-gradient-to-r from-amber-500 via-orange-400 to-rose-400 bg-clip-text text-transparent">美味與食安兼得</span>
+</h1>
+
+<p data-zh="歡迎來到逢甲大學商圈！本指南為您嚴選獲「食安特優、優良」認證的在地名店，結合流暢的交通與導航規劃，讓您逛得開心、吃得更安心。" 
+   data-en="Welcome to Feng Chia University District! This guide handpicks verified local shops with 'Excellent & Premium' food safety honors, paired with smooth itineraries, ensuring you explore happily and dine safely." 
+   class="max-w-2xl mx-auto text-slate-500 text-base md:text-lg mb-10 leading-relaxed">
+    歡迎來到逢甲大學商圈！本指南為您嚴選獲「食安特優、優良」認證的在地名店，結合流暢的交通與導航規劃，讓您逛得開心、吃得更安心。
+</p>
             <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#transport" class="w-full sm:w-auto bg-gradient-to-r from-amber-400 to-rose-400 hover:opacity-90 text-white font-bold px-8 py-4 rounded-full shadow-lg transition-all text-center">
-                    規劃交通與行程
-                </a>
-                <a href="#shops" class="w-full sm:w-auto bg-white hover:bg-orange-50/50 text-slate-700 font-semibold px-8 py-4 rounded-full shadow-sm hover:shadow-md border border-amber-100 transition-all text-center">
-                    瀏覽安心店家
-                </a>
-            </div>
+    <a href="#itinerary" data-zh="規劃交通與行程" data-en="Plan Your Itinerary" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-amber-500 to-rose-400 text-white font-bold rounded-2xl shadow-lg hover:shadow-xl hover:scale-[1.02] transition-all text-center">規劃交通與行程</a>
+    <a href="#shops" data-zh="瀏覽安心店家" data-en="Browse Verified Shops" class="w-full sm:w-auto px-8 py-4 bg-white text-slate-700 font-bold rounded-2xl border border-slate-200 hover:bg-slate-50 transition-all text-center">瀏覽安心店家</a>
+</div>
         </div>
     </header> 
 
@@ -545,27 +546,47 @@ function collectStamp(id, shopName) {
 }
 
    function changeLanguage(lang) {
-        const elements = document.querySelectorAll('[data-zh]');
-        elements.forEach(el => {
-            if (lang === 'en') {
-                if (el.getAttribute('data-en')) el.textContent = el.getAttribute('data-en');
-            } else {
-                if (el.getAttribute('data-zh')) el.textContent = el.getAttribute('data-zh');
+    // 同時抓取全網頁所有寫了 data-zh 或 data-en 的標籤，一個都不放過
+    const elements = document.querySelectorAll('[data-zh], [data-en]');
+    
+    elements.forEach(el => {
+        if (lang === 'en') {
+            const enText = el.getAttribute('data-en');
+            if (enText) {
+                // 如果裡面包含 <i> 圖示，保留圖示只換文字
+                if (el.querySelector('i')) {
+                    const icon = el.querySelector('i').outerHTML;
+                    el.innerHTML = icon + ' ' + enText;
+                } else {
+                    el.innerHTML = enText;
+                }
             }
-        });
-
-        const btnZh = document.getElementById('btn-zh');
-        const btnEn = document.getElementById('btn-en');
-        if (btnZh && btnEn) {
-            if (lang === 'en') {
-                btnEn.className = "px-2.5 py-1 text-xs font-bold rounded-lg bg-amber-950 text-white transition-all cursor-pointer";
-                btnZh.className = "px-2.5 py-1 text-xs font-medium rounded-lg bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all cursor-pointer";
-            } else {
-                btnZh.className = "px-2.5 py-1 text-xs font-bold rounded-lg bg-amber-950 text-white transition-all cursor-pointer";
-                btnEn.className = "px-2.5 py-1 text-xs font-medium rounded-lg bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all cursor-pointer";
+        } else {
+            const zhText = el.getAttribute('data-zh');
+            if (zhText) {
+                if (el.querySelector('i')) {
+                    const icon = el.querySelector('i').outerHTML;
+                    el.innerHTML = icon + ' ' + zhText;
+                } else {
+                    el.innerHTML = zhText;
+                }
             }
         }
+    });
+
+    // 保持原本的按鈕視覺切換
+    const btnZh = document.getElementById('btn-zh');
+    const btnEn = document.getElementById('btn-en');
+    if (btnZh && btnEn) {
+        if (lang === 'en') {
+            btnEn.className = "px-2.5 py-1 text-xs font-bold rounded-lg bg-amber-950 text-white transition-all cursor-pointer";
+            btnZh.className = "px-2.5 py-1 text-xs font-medium rounded-lg bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all cursor-pointer";
+        } else {
+            btnZh.className = "px-2.5 py-1 text-xs font-bold rounded-lg bg-amber-950 text-white transition-all cursor-pointer";
+            btnEn.className = "px-2.5 py-1 text-xs font-medium rounded-lg bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all cursor-pointer";
+        }
     }
+}
 
 </script> </body>
 </html>
