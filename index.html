@@ -318,96 +318,116 @@
     <section id="shops" class="py-20 px-6">
         <div class="max-w-7xl mx-auto">
             <span class="text-rose-400 font-bold tracking-widest text-xs uppercase block mb-2">STEP 02</span>
-            <h2 class="text-3xl md:text-5xl font-extrabold text-amber-950 mb-4" data-zh="食安安心店家" data-en="Food Safety Verified Shops">食安安心店家</h2>
-            <p class="text-slate-500 mb-8 text-sm md:text-base" data-zh="點擊店家卡片可查看詳細食安登錄字號與檢驗資訊；點擊右下角「導航」可直接開啟 Google 地圖。" data-en="Click on a shop card to view food safety registration and inspection details; click 'Navigate' to open Google Maps directly.">點擊店家卡片可查看詳細食安登錄字號與檢驗資訊；點擊右下角「導航」可直接開啟 Google 地圖。</p>
-            
+            <h2 class="text-3xl md:text-5xl font-extrabold text-amber-950 mb-4" data-zh="食安安心店家" data-en="Safe Food Shops">食安安心店家</h2>
+            <p class="text-slate-500 mb-8 text-sm md:text-base" data-zh="點擊店家卡片可查看詳細食安登錄字號與檢驗資訊；點擊右下角「導航」可直接開啟 Google 地圖。" data-en="Click shop cards for safety records; click 'Nav' to open Google Maps.">點擊店家卡片可查看詳細食安登錄字號與檢驗資訊；點擊右下角「導航」可直接開啟 Google 地圖。</p>
+
             <div class="flex flex-wrap gap-3 mb-10">
-                <button onclick="filterShops('all')" class="shop-tab px-5 py-2 rounded-full bg-amber-950 text-white font-medium text-sm transition-all" data-zh="全部" data-en="All">全部</button>
-                <button onclick="filterShops('food')" class="shop-tab px-5 py-2 rounded-full bg-amber-50 text-amber-800 hover:bg-amber-100 font-medium text-sm transition-all" data-zh="美味美食" data-en="Delicious Food">美味美食</button>
-                <button onclick="filterShops('drink')" class="shop-tab px-5 py-2 rounded-full bg-amber-50 text-amber-800 hover:bg-amber-100 font-medium text-sm transition-all" data-zh="特色飲品" data-en="Specialty Drinks">特色飲品</button>
-                <button onclick="filterShops('star-safe')" class="shop-tab px-5 py-2 rounded-full bg-emerald-100 text-emerald-800 hover:bg-emerald-200 font-bold text-sm transition-all" data-zh="食安特優🏅" data-en="Top Safety🏅">食安特優🏅</button>
+                <button onclick="filterShops('all')" class="shop-tab px-5 py-2 rounded-full bg-amber-950 text-white font-medium text-sm transition-all" data-zh="全部顯示" data-en="All">全部顯示</button>
+                <button onclick="filterShops('food')" class="shop-tab px-5 py-2 rounded-full bg-amber-50 text-amber-800 hover:bg-amber-100 font-medium text-sm transition-all" data-zh="美味小吃" data-en="Snacks">美味小吃</button>
+                <button onclick="filterShops('drink')" class="shop-tab px-5 py-2 rounded-full bg-amber-50 text-amber-800 hover:bg-amber-100 font-medium text-sm transition-all" data-zh="特調飲品" data-en="Drinks">特調飲品</button>
+                <button onclick="filterShops('star-safe')" class="shop-tab px-5 py-2 rounded-full bg-emerald-100 text-emerald-800 hover:bg-emerald-200 font-bold text-sm transition-all" data-zh="⭐ 食安特優" data-en="⭐ Top Safety">⭐ 食安特優</button>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                
-                <div onclick="openTraceability('官芝霖大腸包小腸', '特優 🏅', '台灣溫體豬肉、在地優質糯米', 'SGS 瘦肉精自主檢驗與來源追溯合格', '2026/05/10 (合格)', '4.3', 'https://maps.google.com')" 
-                     class="shop-item food star-safe cursor-pointer bg-white p-8 rounded-3xl shadow-lg border border-orange-50 flex flex-col justify-between min-h-[410px] transform hover:-translate-y-1 transition-all">
-                    
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <div onclick="openTraceability('官芝霖大腸包小腸', '優良 👍', '台灣溫體豬肉、在地優質糯米', 'SGS 瘦肉精自主檢驗與來源追溯合格', '2026/05/10 (合格)', '4.2', 'google.com/maps/embed?pb=...`），能直接穿透瀏覽器的封鎖政策。')" class="shop-item food cursor-pointer bg-white p-8 rounded-3xl shadow-lg border border-orange-50 flex flex-col justify-between min-h-[380px] transition-all hover:shadow-2xl hover:-translate-y-1">
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <span class="bg-amber-100 text-amber-800 text-xs px-2.5 py-1 rounded-full font-semibold">
+                                <i class="fa-solid fa-circle-check mr-1"></i>
+                                <span data-zh="食安優良" data-en="Good Safety">食安優良</span>
+                            </span>
+                            <span class="text-4xl font-black text-orange-50/50">01</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-800 mt-4 mb-2" data-zh="官芝霖大腸包小腸" data-en="Guan Zhi Lin Rice Sausage">官芝霖大腸包小腸</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed" data-zh="酥脆糯米腸夾烤香腸，逢甲第一名物。" data-en="Crispy rice sausage stuffed with flavorful grilled sausage. Famous local snack.">酥脆糯米腸夾烤香腸，逢甲第一名物。</p>
+                        <div class="flex flex-wrap gap-1.5 mt-3">
+                            <span class="bg-orange-50 text-orange-700 text-[11px] px-2 py-0.5 rounded-md font-medium" data-zh="✨ 台灣溫體豬肉" data-en="✨ Fresh Taiwan Pork">✨ 台灣溫體豬肉</span>
+                            <span class="bg-amber-50 text-amber-700 text-[11px] px-2 py-0.5 rounded-md font-medium" data-zh="🌾 在地糯米" data-en="🌾 Local Sticky Rice">🌾 在地糯米</span>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                        <span class="text-emerald-700 font-bold flex items-center">
+                            <i class="fa-solid fa-database mr-1"></i>
+                            <span data-zh="點擊查看數位追溯資訊" data-en="Click to view digital traceability">點擊查看數位追溯資訊</span>
+                        </span>
+                        <button onclick="event.stopPropagation(); window.open('https://maps.google.com/4', '_blank');" class="px-3 py-1.5 bg-orange-400 hover:bg-orange-500 text-white rounded-xl font-bold flex items-center gap-1 shadow-md shadow-orange-200 transition-all">
+                            <i class="fa-solid fa-location-arrow"></i>
+                            <span data-zh="導航" data-en="Nav">導航</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div onclick="openTraceability('明倫蛋餅', '優良 👍', '嚴選洗選蛋、新鮮青蔥', '無抗生素與藥物殘留檢驗合格', '2026/05/12 (合格)', '4.5', 'https://maps.google.com/5')" class="shop-item food cursor-pointer bg-white p-8 rounded-3xl shadow-lg border border-orange-50 flex flex-col justify-between min-h-[380px] transition-all hover:shadow-2xl hover:-translate-y-1">
+                    <div>
+                        <div class="flex justify-between items-start">
+                            <span class="bg-amber-100 text-amber-800 text-xs px-2.5 py-1 rounded-full font-semibold">
+                                <i class="fa-solid fa-circle-check mr-1"></i>
+                                <span data-zh="食安優良" data-en="Good Safety">食安優良</span>
+                            </span>
+                            <span class="text-4xl font-black text-orange-50/50">02</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-slate-800 mt-4 mb-2" data-zh="明倫蛋餅" data-en="Ming Lun Egg Roll">明倫蛋餅</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed" data-zh="彈牙手工麵糊蛋餅，獨門甜辣醬必加。" data-en="Chewy handmade flour batter egg pancake. Best paired with special sweet chili sauce.">彈牙手工麵糊蛋餅，獨門甜辣醬必加。</p>
+                        <div class="flex flex-wrap gap-1.5 mt-3">
+                            <span class="bg-orange-50 text-orange-700 text-[11px] px-2 py-0.5 rounded-md font-medium" data-zh="🥚 嚴選洗選蛋" data-en="🥚 Certified Eggs">🥚 嚴選洗選蛋</span>
+                            <span class="bg-amber-50 text-amber-700 text-[11px] px-2 py-0.5 rounded-md font-medium" data-zh="🌱 新鮮青蔥" data-en="🌱 Fresh Green Onion">🌱 新鮮青蔥</span>
+                        </div>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                        <span class="text-amber-800 font-bold flex items-center">
+                            <i class="fa-solid fa-database mr-1"></i>
+                            <span data-zh="點擊查看數位追溯資訊" data-en="Click to view digital traceability">點擊查看數位追溯資訊</span>
+                        </span>
+                        <button onclick="event.stopPropagation(); window.open('https://maps.google.com/6', '_blank');" class="px-3 py-1.5 bg-orange-400 hover:bg-orange-500 text-white rounded-xl font-bold flex items-center gap-1 shadow-md shadow-orange-200 transition-all">
+                            <i class="fa-solid fa-location-arrow"></i>
+                            <span data-zh="導航" data-en="Nav">導航</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div onclick="openTraceability('日船章魚小丸子', '特優 🏅', '優質章魚切塊、特調外酥麵糊', 'SGS 檢驗與低溫物流全程合格', '2026/05/11 (合格)', '4.4', 'https://www.google.com/maps')" class="shop-item food star-safe cursor-pointer bg-white p-8 rounded-3xl shadow-lg border border-orange-50 flex flex-col justify-between min-h-[380px] transition-all hover:shadow-2xl hover:-translate-y-1">
                     <div>
                         <div class="flex justify-between items-start">
                             <span class="bg-emerald-100 text-emerald-800 text-xs px-2.5 py-1 rounded-full font-bold">
                                 <i class="fa-solid fa-circle-check mr-1"></i>
                                 <span data-zh="食安特優" data-en="Top Safety">食安特優</span>
                             </span>
-                            <span class="text-4xl font-black text-orange-50">01</span>
+                            <span class="text-4xl font-black text-orange-50/50">03</span>
                         </div>
-                        <h3 class="text-2xl font-bold text-slate-800 mt-4 mb-2" data-zh="官芝霖大腸包小腸" data-en="Guan Zhi Lin Rice Sausage">官芝霖大腸包小腸</h3>
-                        <p class="text-slate-500 text-sm" data-zh="酥脆糯米腸夾烤香腸，逢甲第一名物。" data-en="Crispy glutinous rice sausage stuffed with grilled pork sausage, Feng Chia's top specialty.">酥脆糯米腸夾烤香腸，逢甲第一名物。</p>
-                        
+                        <h3 class="text-2xl font-bold text-slate-800 mt-4 mb-2" data-zh="日船章魚小丸子" data-en="Ri Chuan Takoyaki">日船章魚小丸子</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed" data-zh="外酥內軟、章魚大塊，逢甲夜市超人氣排隊名店。" data-en="Crispy outside, soft inside with big octopus chunks. A must-try popular shop!">外酥內軟、章魚大塊，逢甲夜市超人氣排隊名店。</p>
                         <div class="flex flex-wrap gap-1.5 mt-3">
-                            <span class="bg-amber-50 text-amber-700 text-[11px] px-2 py-0.5 rounded-md font-medium" data-zh="✨ 台灣溫體豬肉" data-en="✨ Fresh Taiwanese Pork">✨ 台灣溫體豬肉</span>
-                            <span class="bg-rose-50 text-rose-700 text-[11px] px-2 py-0.5 rounded-md font-medium" data-zh="🌾 在地糯米" data-en="🌾 Local Sticky Rice">🌾 在地糯米</span>
+                            <span class="bg-amber-50 text-amber-700 text-[11px] px-2 py-0.5 rounded-md font-medium" data-zh="🐙 嚴選章魚" data-en="🐙 Selected Octopus">🐙 嚴選章魚</span>
+                            <span class="bg-rose-50 text-rose-700 text-[11px] px-2 py-0.5 rounded-md font-medium" data-zh="✨ 獨家柴魚片" data-en="✨ Signature Bonito">✨ 獨家柴魚片</span>
                         </div>
-                    </div> 
-                    
-                    <div class="mt-6 pt-3 border-t border-slate-100 flex items-center justify-between text-xs -mx-8 -mb-8 p-4 bg-emerald-50/60 rounded-b-3xl">
-                        <span class="text-emerald-700 font-bold">
-                            <i class="fa-solid fa-database mr-1"></i>
-                            <span data-zh="點擊查看數位溯源資訊" data-en="Click to view digital traceability">點擊查看數位溯源資訊</span>
-                        </span>
-                        <button onclick="event.stopPropagation(); window.open('https://www.google.com/maps/search/?api=1&query=官芝霖大腸包小腸逢甲店', '_blank');" class="bg-gradient-to-r from-amber-400 to-rose-400 text-white font-bold px-3 py-1.5 rounded-xl shadow-sm flex items-center cursor-pointer" style="position: relative; z-index: 9999;">
-                            <i class="fa-solid fa-location-dot mr-1"></i>
-                            <span data-zh="導航" data-en="Navigate">導航</span>
-                        </button>
                     </div>
-                </div> 
-
-                <div onclick="openTraceability('明倫蛋餅', '優良 👍', '嚴選洗選蛋、新鮮青蔥', '無抗生素與藥物殘留檢驗合格', '2026/05/12 (合格)', '4.5', 'https://www.google.com/maps/search/?api=1&query=明倫蛋餅逢甲福星店')" 
-                     class="shop-item food cursor-pointer bg-white p-8 rounded-3xl shadow-lg border border-orange-50 flex flex-col justify-between min-h-[410px] transform hover:-translate-y-1 transition-all">
-                    
-                    <div>
-                        <div class="flex justify-between items-start">
-                            <span class="bg-amber-100 text-amber-800 text-xs px-2.5 py-1 rounded-full font-bold">
-                                <i class="fa-solid fa-circle-check mr-1"></i>
-                                <span data-zh="食安優良" data-en="Good Safety">食安優良</span>
-                            </span>
-                            <span class="text-4xl font-black text-orange-50">02</span>
-                        </div>
-                        <h3 class="text-2xl font-bold text-slate-800 mt-4 mb-2" data-zh="明倫蛋餅" data-en="Ming Lun Egg Roll">明倫蛋餅</h3>
-                        <p class="text-slate-500 text-sm" data-zh="彈牙手工麵糊蛋餅，獨門甜辣醬必加。" data-en="Chewy handmade egg roll with signature sweet chili sauce.">彈牙手工麵糊蛋餅，獨門甜辣醬必加。</p>
-                        
-                        <div class="flex flex-wrap gap-1.5 mt-3">
-                            <span class="bg-amber-50 text-amber-700 text-[11px] px-2 py-0.5 rounded-md font-medium" data-zh="🥚 嚴選洗選蛋" data-en="🥚 Selected Certified Eggs">🥚 嚴選洗選蛋</span>
-                            <span class="bg-rose-50 text-rose-700 text-[11px] px-2 py-0.5 rounded-md font-medium" data-zh="🌱 新鮮青蔥" data-en="🌱 Fresh Green Onions">🌱 新鮮青蔥</span>
-                        </div>
-                    </div> 
-                    
-                    <div class="mt-6 pt-3 border-t border-slate-100 flex items-center justify-between text-xs -mx-8 -mb-8 p-4 bg-amber-50/60 rounded-b-3xl">
-                        <span class="text-amber-700 font-bold">
+                    <div class="mt-6 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+                        <span class="text-emerald-700 font-bold flex items-center">
                             <i class="fa-solid fa-database mr-1"></i>
-                            <span data-zh="點擊查看數位溯源資訊" data-en="Click to view digital traceability">點擊查看數位溯源資訊</span>
+                            <span data-zh="點擊查看數位追溯資訊" data-en="Click to view digital traceability">點擊查看數位追溯資訊</span>
                         </span>
-                        <button onclick="event.stopPropagation(); window.open('https://www.google.com/maps/search/?api=1&query=明倫蛋餅逢甲福星店', '_blank');" class="bg-gradient-to-r from-amber-400 to-rose-400 text-white font-bold px-3 py-1.5 rounded-xl shadow-sm flex items-center cursor-pointer" style="position: relative; z-index: 9999;">
-                            <i class="fa-solid fa-location-dot mr-1"></i>
-                            <span data-zh="導航" data-en="Navigate">導航</span>
+                        <button onclick="event.stopPropagation(); window.open('https://www.google.com/maps/search/?api=1&query=日船章魚小丸子逢甲總店', '_blank');" class="px-3 py-1.5 bg-orange-400 hover:bg-orange-500 text-white rounded-xl font-bold flex items-center gap-1 shadow-md shadow-orange-200 transition-all">
+                            <i class="fa-solid fa-location-arrow"></i>
+                            <span data-zh="導航" data-en="Nav">導航</span>
                         </button>
                     </div>
                 </div>
 
+            </div> </div>
+    </section>
+
+    <section id="our-map" class="py-20 px-6 bg-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <span class="text-pink-500 font-bold tracking-widest text-xs uppercase block mb-2">EXPLORE</span>
+            <h2 class="text-3xl md:text-5xl font-extrabold text-purple-950 mb-6" data-zh="逢甲食安玩樂地圖" data-en="Feng Chia Food Safety Map">逢甲食安玩樂地圖</h2>
+            <p class="text-slate-500 max-w-2xl mx-auto mb-10 text-sm md:text-base" data-zh="這是我們為您精心彙整的互動地圖，一指掌握所有安心店家的相對位置，逛夜市再也不迷路！" data-en="This is our carefully curated interactive map to help you locate all safe shops easily!">這是我們為您精心彙整的互動地圖，一指掌握所有安心店家的相對位置，逛夜市再也不迷路！</p>
+
+            <div class="w-full h-[450px] rounded-3xl overflow-hidden shadow-xl border border-orange-50">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.144415170327!2d120.6441493!3d24.1754403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34691624c9c1044b%3A0x7d94943717df30a5!2z6YCi55Sy5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1716680000000!5m2!1szh-TW!2stw" class="w-full h-full border-0" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
-<section id="our-map" class="py-20 px-6 bg-white">
-    <div class="max-w-7xl mx-auto text-center">
-        <span class="text-pink-500 font-bold tracking-widest text-xs uppercase block mb-2">EXPLORE</span>
-        <h2 class="text-3xl md:text-5xl font-extrabold text-purple-950 mb-6" data-zh="逢甲食安玩樂地圖" data-en="Feng Chia Food Safety Map">逢甲食安玩樂地圖</h2>
-        <p class="text-slate-500 max-w-2xl mx-auto mb-10 text-sm md:text-base" data-zh="這是我們為您精心彙整的互動地圖，一指掌握所有安心店家的相對位置，逛夜市再也不迷路！" data-en="This is our carefully curated interactive map to help you locate all safe shops easily!">這是我們為您精心彙整的互動地圖，一指掌握所有安心店家的相對位置，逛夜市再也不迷路！</p>
-
-        <div class="w-full h-[450px] rounded-3xl overflow-hidden shadow-xl border border-orange-50">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.144415170327!2d120.6441493!3d24.1754403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34691624c9c1044b%3A0x7d94943717df30a5!2z6YCi55Sy5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1716680000000!5m2!1szh-TW!2stw" class="w-full h-full border-0" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </div>
-</section>
 <div onclick="openTraceability('日船章魚小丸子', '特優 🏅', '優質章魚切塊、特調外酥麵糊', 'SGS 檢驗與低溫物流全程合格', '2026/05/11 (合格)', '4.4', 'https://www.google.com/maps')" class="shop-item food star-safe cursor-pointer bg-white p-8 rounded-3xl shadow-lg border border-orange-50 flex flex-col justify-between min-h-[380px] transition-all hover:shadow-2xl hover:-translate-y-1">
     
     <div>
